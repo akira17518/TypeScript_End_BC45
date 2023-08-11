@@ -28,6 +28,7 @@
     "react-scripts": "5.0.1",
     "react-select": "^5.7.4",
     "react-wow": "^1.0.0",
+    "reactjs": "^1.0.0",
     "sass": "^1.63.6",
     "sweetalert2": "^11.7.16",
     "typescript": "^4.9.5",
