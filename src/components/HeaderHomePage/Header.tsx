@@ -7,7 +7,9 @@ import '../../style/style.scss'
 import { USER_LOGIN } from '../../utility/config'
 import { loginAction, loginActionApi } from '../../redux/reducers/userReducder'
 import { history } from '../..'
-type Props = {}
+type Props = {
+  logo?: JSX.Element
+}
 
 const Header = (props: Props) => {
   const {arrcategory} = useSelector ((state:RootState)=> state.courseReducer)
@@ -94,20 +96,14 @@ getCategory ()
   return (
     <nav className="navbar navbar-expand-sm navbar-light bg-light  headerComp">
       <div className="container">
-        <NavLink className="navbar-brand" to='/' >Navbar</NavLink>
+        <NavLink className="navbar-brand" to='/' >{props.logo} Elearning</NavLink>
         <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="collapsibleNavId">
           <ul className="navbar-nav me-auto mt-2 mt-lg-0">
-            <li className="nav-item">
-              <NavLink className="nav-link active" to="/" aria-current="page">Home <span className="visually-hidden">(current)</span></NavLink>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
-            </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
+              <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
               <div className="dropdown-menu" aria-labelledby="dropdownId">
                
                   {arrcategory.map((item,index) => {

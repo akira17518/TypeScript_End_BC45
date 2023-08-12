@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from '../../components/HeaderHomePage/Header';
 import Footer from '../../components/Footer/Footer';
-
+import {ScheduleOutlined} from '@ant-design/icons'
 type Props = {};
 
 const HomeTemplate = (props: Props) => {
@@ -13,7 +13,7 @@ const HomeTemplate = (props: Props) => {
 
   return (
     <>
-      <Header />
+      <Header logo ={<ScheduleOutlined style={{fontSize:60}}/>} />
       <div className='content' style={{ minHeight: '75vh' }}>
         <Outlet />
       </div>

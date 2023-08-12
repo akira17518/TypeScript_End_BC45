@@ -1,0 +1,46 @@
+.subscrible_form button
+{
+    padding: 0.625rem 2.188rem;
+    font-size: 1.25rem;
+    /* background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%); */
+    background-size: 100%;
+    border-color: transparent;
+    transition: all .5s;
+    border-radius: 0 0.5rem 0.5rem 0;
+    color: #fff;
+    cursor: pointer;
+}
+.footer_item li
+{
+    padding: 0.5rem 0;
+    list-style: none;
+}
+.footer_contact li
+{
+    display: flex;
+    align-items: center;
+}
+.footer_contact i
+{
+    size: 0.625rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    margin-right: 0.625rem;
+    text-align: center;
+    background: #007bff;
+    display: block;
+    border-radius: 3.125rem;
+}
+.footer_item a
+{
+    color: #fff;
+    font-size: 16px;
+    transition: all .5s;
+    text-decoration: none;
+}
+.footer_item a:hover
+{
+    color: #007bff;
+    text-decoration: none;
+}

@@ -37,41 +37,41 @@ useEffect (() => {
 
 
 <div className='homepageTest'>
-<video  className="video-background w-100" autoPlay muted loop   controls={false} onContextMenu={(e) => e.preventDefault()} >
+{/* <video  className="video-background w-100" autoPlay muted loop   controls={false} onContextMenu={(e) => e.preventDefault()} >
           <source src="./images/video1.webm"  />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
   <div className="container-fluid py-5">
     <div className="container">
       <div className="row g-4">
-        <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
           <div className="service-item text-center pt-3">
             <div className="p-4">
-            <i className="fa fa-3x fa-code text-primary mb-4" />
-              <h5 className="mb-3">Skilled Instructors</h5>
-              <p>Dedicated coding experts as instructors to guide you.</p>
+              <i className="fa fa-3x fa-book-reader text-primary mb-4"></i>
+              <h5 className="mb-3">Personalized learning</h5>
+              <p>Learn at your own pace, reinforcing old knowledge and supplementing advanced knowledge.</p>
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
           <div className="service-item text-center pt-3">
             <div className="p-4">
-            <i className="fa fa-3x fa-laptop-code text-primary mb-4" />
-              <h5 className="mb-3">Online Classes</h5>
-              <p>Join online coding classes from anywhere, anytime.</p>
+            <i className="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+              <h5 className="mb-3">Trusted content</h5>
+              <p>The system of lectures and practical exercises is built specifically for different courses.</p>
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
           <div className="service-item text-center pt-3">
             <div className="p-4">
               <i className="fa fa-3x fa-home text-primary mb-4" />
               <h5 className="mb-3">Home Projects</h5>
-              <p>Learn to build real-world coding projects from home.</p>
+              <p>Choose from face-to-face learning at the center or interactive online learning to suit students' needs</p>
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+        {/* <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
           <div className="service-item text-center pt-3">
             <div className="p-4">
               <i className="fa fa-3x fa-book-open text-primary mb-4" />
@@ -79,51 +79,11 @@ useEffect (() => {
                     <p>Access our extensive coding library for references.</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
   {/* Service End */}
-  {/* About Start */}
-  <div className="container-xxl py-5">
-    <div className="container">
-      <div className="row g-5">
-        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style={{minHeight: 400}}>
-          <div className="position-relative h-100">
-            <img className="img-fluid position-absolute w-100 h-100" src="./images/about.jpg" alt='...' style={{objectFit: 'cover'}} />
-          </div>
-        </div>
-        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-          <h6 className="section-title bg-white text-start text-primary pe-3">About Us</h6>
-          <h1 className="mb-4">Welcome to eLEARNING</h1>
-          <p className="mb-4">Welcome to the Coding World, where we foster a passion for coding and development. We believe that coding is an art, and we are dedicated to helping aspiring developers reach their full potential.</p>
-        <p className="mb-4">Our mission is to provide top-notch coding education through our skilled instructors and online classes. We encourage students to work on real-world projects from the comfort of their homes and build a solid code library for future reference.</p>
-          <div className="row gy-2 gx-4 mb-4">
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Skilled Instructors</p>
-            </div>
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Online Classes</p>
-            </div>
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />International Certificate</p>
-            </div>
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Skilled Instructors</p>
-            </div>
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Online Classes</p>
-            </div>
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />International Certificate</p>
-            </div>
-          </div>
-          <a className="btn btn-primary py-3 px-5 mt-2" >Read More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* About End */}
   {/* Categories Start */}
   <div className="container-xxl py-5 category">
     <div className="container">
@@ -202,11 +162,7 @@ useEffect (() => {
                       const action =   registerCourseApi (course);
                       dispatch (action);
                     }else {
-                      Swal.fire({
-                        icon: 'error',
-                        title: 'Please login to register this course.',
-                       
-                      })
+                      alert ('You must login first!')
                     }
                   }} className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{borderRadius: '0 30px 30px 0'}}>Register</Button>
                 </div>
@@ -323,6 +279,46 @@ useEffect (() => {
     </div>
   </div>
   {/* Team End */}
+  {/* About Start */}
+  <div className="container-xxl py-5">
+    <div className="container">
+      <div className="row g-5">
+        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style={{minHeight: 400}}>
+          <div className="position-relative h-100">
+            <img className="img-fluid position-absolute w-100 h-100" src="./images/about.jpg" alt='...' style={{objectFit: 'cover'}} />
+          </div>
+        </div>
+        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          <h6 className="section-title bg-white text-start text-primary pe-3">About Us</h6>
+          <h1 className="mb-4">Welcome to eLEARNING</h1>
+          <p className="mb-4">Welcome to the Coding World, where we foster a passion for coding and development. We believe that coding is an art, and we are dedicated to helping aspiring developers reach their full potential.</p>
+        <p className="mb-4">Our mission is to provide top-notch coding education through our skilled instructors and online classes. We encourage students to work on real-world projects from the comfort of their homes and build a solid code library for future reference.</p>
+          <div className="row gy-2 gx-4 mb-4">
+            <div className="col-sm-6">
+              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Skilled Instructors</p>
+            </div>
+            <div className="col-sm-6">
+              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Online Classes</p>
+            </div>
+            <div className="col-sm-6">
+              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />International Certificate</p>
+            </div>
+            <div className="col-sm-6">
+              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Skilled Instructors</p>
+            </div>
+            <div className="col-sm-6">
+              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Online Classes</p>
+            </div>
+            <div className="col-sm-6">
+              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />International Certificate</p>
+            </div>
+          </div>
+          <a className="btn btn-primary py-3 px-5 mt-2" >Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* About End */}
   
   {/* Footer Start */}
   
