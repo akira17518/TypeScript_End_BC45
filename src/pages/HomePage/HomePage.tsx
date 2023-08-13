@@ -127,47 +127,38 @@ useEffect (() => {
     <div className="container">
       <div className="text-center wow fadeInUp" data-wow-delay="0.2s">
         <h6 className="section-title bg-white text-center text-primary px-3">Categories</h6>
-        <h1 className="mb-5">Courses Categories</h1>
+        <h1 className="mb-5">Courses</h1>
       </div>
       <div className="row g-3">
-        <div className="col-lg-7 col-md-6">
-          <div className="row g-3">
-            
-            <div className="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-              <NavLink to={`/courses/BackEnd`}  className="position-relative d-block overflow-hidden" >
-                <img className="img-fluid" src="./images/cat-1.jpg" alt='...' />
-                <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: 1}}>
-                  <h5 className="m-0">Backend</h5>
-                  <small className="text-primary">49 Courses</small>
-                </div>
-              </NavLink>
+        <div className="col-lg-3 col-sm-6 wow zoomIn" data-wow-delay="0.7s" style={{minHeight: 350}}>
+          <NavLink to={`/courses/BackEnd`} className="position-relative d-block h-100 overflow-hidden" >
+            <img className="img-fluid position-absolute w-100 h-100" src="./images/backend.jpg" alt='...' style={{objectFit: 'cover'}} />
+            <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: 1}}>
+              <h5 className="m-0">Backend</h5>
             </div>
-            <div className="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.4s">
-              <NavLink to={`/courses/Design`} className="position-relative d-block overflow-hidden" >
-                <img className="img-fluid" src="./images/cat-2.jpg" alt='...' />
-                <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: 1}}>
-                  <h5 className="m-0">Web Design</h5>
-                  <small className="text-primary">49 Courses</small>
-                </div>
-              </NavLink>
-            </div>
-            <div className="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-              <NavLink to={`/courses/DiDong`} className="position-relative d-block overflow-hidden" >
-                <img className="img-fluid" src="./images/cat-3.jpg" alt='...' />
-                <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: 1}}>
-                  <h5 className="m-0">Mobile Development</h5>
-                  <small className="text-primary">49 Courses</small>
-                </div>
-              </NavLink>
-            </div>
-          </div>
+          </NavLink>
         </div>
-        <div className="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style={{minHeight: 350}}>
+        <div className="col-lg-3 col-sm-6 wow zoomIn" data-wow-delay="0.7s" style={{minHeight: 350}}>
+          <NavLink to={`/courses/Design`} className="position-relative d-block h-100 overflow-hidden" >
+            <img className="img-fluid position-absolute w-100 h-100" src="./images/design3.jpg" alt='...' style={{objectFit: 'cover'}} />
+            <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: 1}}>
+              <h5 className="m-0">Web Design</h5>
+            </div>
+          </NavLink>
+        </div>
+        <div className="col-lg-3 col-sm-6 wow zoomIn" data-wow-delay="0.7s" style={{minHeight: 350}}>
+          <NavLink to={`/courses/DiDong`} className="position-relative d-block h-100 overflow-hidden" >
+            <img className="img-fluid position-absolute w-100 h-100" src="./images/Mobile.png" alt='...' style={{objectFit: 'cover'}} />
+            <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: 1}}>
+              <h5 className="m-0">Mobile Development</h5>
+            </div>
+          </NavLink>
+        </div>
+        <div className="col-lg-3 col-sm-6 wow zoomIn" data-wow-delay="0.7s" style={{minHeight: 350}}>
           <NavLink to={`/courses/FullStack`} className="position-relative d-block h-100 overflow-hidden" >
             <img className="img-fluid position-absolute w-100 h-100" src="./images/cat-4.jpg" alt='...' style={{objectFit: 'cover'}} />
             <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: 1}}>
               <h5 className="m-0">FullStack Development</h5>
-              <small className="text-primary">49 Courses</small>
             </div>
           </NavLink>
         </div>
