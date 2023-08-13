@@ -41,6 +41,44 @@ useEffect (() => {
           <source src="./images/video1.webm"  />
           Your browser does not support the video tag.
         </video> */}
+        {/* Introduce Start */}
+        <div className="container HomePageHeroHeader">
+      <div className="row align-items-center">
+        <div className="col-lg-6 content-left">
+          <h3>
+          Welcome to the Elearning environment</h3>
+          <b> a place of flexibility and convenience for learning</b>
+          <p className="mt-3 mb-lg-5 mb-4">
+          Seize your time, study anywhere, anytime, and engage diversely through forums. Get ready for a promising learning experience!.          </p>
+          <a href="#url" className="btn btn-outline-primary theme-button">Get Started</a>
+        </div>
+        <div className="col-lg-6 content-photo mt-lg-0 mt-5">
+        <img className="w-100 h-100" src="./images/e-learning.jpg" alt='...' style={{objectFit: 'cover'}} />
+        </div>
+      </div>
+      <div className="clear"></div>
+    </div>
+        {/* Introduce End */}
+        {/* About Start */}
+  <div className="container-xxl py-5">
+    <div className="container">
+      <div className="row g-5">
+        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style={{minHeight: 400}}>
+          <div className="position-relative h-100">
+            <img className="img-fluid position-absolute w-100 h-100" src="./images/coding.jpg" alt='...' style={{objectFit: 'cover'}} />
+          </div>
+        </div>
+        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          <h6 className="section-title bg-white text-start text-primary pe-3">About Us</h6>
+          <h1 className="mb-4">About Elearning</h1>
+          <p className="mb-4">We came from the top 10 best students in IT majors in 2007 at Vietnam National University, Ho Chi Minh City. Before starting to build this Elearning, we were software developers and trainers with more than 10 years of experience.</p>
+        <p className="mb-4">Our goal is to become a leading specialized programming training system in the region, providing highly skilled and deeply knowledgeable human resources for the development of the software industry in the current digital age. We aim to contribute to the societal advancement, making Vietnam a powerhouse in software development and a source of highly skilled and qualified workforce for the world.</p>
+          <a className="btn btn-primary py-3 px-5 mt-2" >Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* About End */}
   <div className="container-fluid py-5">
     <div className="container">
       <div className="row g-4">
@@ -169,20 +207,7 @@ useEffect (() => {
               </div>
               <div className="text-center p-4 pb-0">
                 <h3 className="mb-0">$149.00</h3>
-                <div className="mb-3">
-                  <small className="fa fa-star text-primary" />
-                  <small className="fa fa-star text-primary" />
-                  <small className="fa fa-star text-primary" />
-                  <small className="fa fa-star text-primary" />
-                  <small className="fa fa-star text-primary" />
-                  <small>(123)</small>
-                </div>
                 <h5 className="mb-4">Web Design &amp; Development Course for Beginners</h5>
-              </div>
-              <div className="d-flex border-top">
-                <small className="flex-fill text-center border-end py-2"><i className="fa fa-user-tie text-primary me-2" />Khai Truong</small>
-                <small className="flex-fill text-center border-end py-2"><i className="fa fa-clock text-primary me-2" />1.49 Hrs</small>
-                <small className="flex-fill text-center py-2"><i className="fa fa-user text-primary me-2" />30 Students</small>
               </div>
             </div>
           </div>
@@ -279,46 +304,7 @@ useEffect (() => {
     </div>
   </div>
   {/* Team End */}
-  {/* About Start */}
-  <div className="container-xxl py-5">
-    <div className="container">
-      <div className="row g-5">
-        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style={{minHeight: 400}}>
-          <div className="position-relative h-100">
-            <img className="img-fluid position-absolute w-100 h-100" src="./images/about.jpg" alt='...' style={{objectFit: 'cover'}} />
-          </div>
-        </div>
-        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-          <h6 className="section-title bg-white text-start text-primary pe-3">About Us</h6>
-          <h1 className="mb-4">Welcome to eLEARNING</h1>
-          <p className="mb-4">Welcome to the Coding World, where we foster a passion for coding and development. We believe that coding is an art, and we are dedicated to helping aspiring developers reach their full potential.</p>
-        <p className="mb-4">Our mission is to provide top-notch coding education through our skilled instructors and online classes. We encourage students to work on real-world projects from the comfort of their homes and build a solid code library for future reference.</p>
-          <div className="row gy-2 gx-4 mb-4">
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Skilled Instructors</p>
-            </div>
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Online Classes</p>
-            </div>
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />International Certificate</p>
-            </div>
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Skilled Instructors</p>
-            </div>
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />Online Classes</p>
-            </div>
-            <div className="col-sm-6">
-              <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2" />International Certificate</p>
-            </div>
-          </div>
-          <a className="btn btn-primary py-3 px-5 mt-2" >Read More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* About End */}
+  
   
   {/* Footer Start */}
   
